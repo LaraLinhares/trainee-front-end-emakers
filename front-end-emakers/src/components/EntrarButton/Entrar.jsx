@@ -3,10 +3,10 @@ import '../EntrarButton/EntrarButton.css';
 
 function Entrar() {
   return (
-    <nav>
+    <nav className="button">
         <Link to="/userpage">Entrar</Link>
     </nav>
   )
 }
 
-export default Entrar
+export default Entrar;

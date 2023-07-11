@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import WrittenSpaceLogin from '../../components/WrittenSpaceLogin/WrittenSpaceLogin';
 import '../Login/Login.css'
 import Entrar from '../../components/EntrarButton/Entrar';
 
@@ -9,15 +8,21 @@ function initialState(){
 
 const Login = () => {
   return (
-    <div>
-        <h1>Entre em Sua Conta</h1>
-        <p>E-mail</p>
-        <WrittenSpaceLogin/>
-        <p>Senha</p>
-        <WrittenSpaceLogin/>
-        <Entrar></Entrar>
+    <div className="user-login">
+      <h1 className="login_title">Entre em Sua Conta</h1>
+      <form autoComplete="nope">
+        <div className="form-control">
+          <label htmlFor="email">E-mail</label>
+          <input id="email" type="text" name="email" autoComplete="off" />
+        </div>
+        <div className="form-control">
+          <label htmlFor="password">Senha</label>
+          <input id="password" type="password" name="password" />
+        </div>
+        <Entrar className="button-entrar"></Entrar>
+      </form>
     </div>
-  )
+  );
 }
 
 export default Login;
