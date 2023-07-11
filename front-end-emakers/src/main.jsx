@@ -7,8 +7,8 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Login from './pages/Login/Login.jsx';
-import Register from './pages/Register.jsx';
-import UserPage from './pages/UserPage.jsx';
+import Register from './pages/Register/Register.jsx';
+import UserPage from './pages/UserPage/UserPage.jsx';
 
 // Mudança para a pág. UserPage apenas quando logar (não utilizado ainda)
 const Private = ({ Item }) => {

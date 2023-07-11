@@ -1,5 +1,5 @@
 import React from 'react';
-import '../pages/Login/Login.css'
+import '../WrittenSpaceLogin/WrittenSpaceLogin.css'
 
 function WrittenSpaceLogin({ text }) {
   return (
