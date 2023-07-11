@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import { AuthProvider } from './contexts/auth';
+
+// Reaproveitamento de estrutura
+import{ Outlet } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return(
-    <div>
-      <h1>Teste React</h1>
+    return(
+    <div className="App">
+      <Outlet></Outlet>
     </div>
   )
 };

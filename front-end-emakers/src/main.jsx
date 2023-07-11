@@ -10,18 +10,30 @@ import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import UserPage from './pages/UserPage.jsx';
 
+// Mudança para a pág. UserPage apenas quando logar (não utilizado ainda)
+const Private = ({ Item }) => {
+  const signed = false;
+  return signed > 0 ? <Item /> : <Login />;
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />
-  },
-  {
-    path: "register",
-    element: <Register />
-  },
-  {
-      path: "userpage",
-      element: <UserPage />
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Login/>,
+      },
+      {
+        path: "register",
+        element: <Register />,
+      },
+      {
+        path: "userpage",
+        element: <UserPage/>,
+      },
+    ],
   },
 ]);
 
