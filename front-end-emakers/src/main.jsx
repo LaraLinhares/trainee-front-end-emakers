@@ -6,7 +6,7 @@ import './index.css';
 // Configurar Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Login from './pages/Login.jsx';
+import Login from './pages/Login/Login.jsx';
 import Register from './pages/Register.jsx';
 import UserPage from './pages/UserPage.jsx';
 

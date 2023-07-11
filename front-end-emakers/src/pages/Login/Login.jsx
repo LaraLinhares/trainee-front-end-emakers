@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import WrittenSpaceLogin from '../components/WrittenSpaceLogin';
-import "../pages/Login.css";
-import Entrar from '../components/Entrar';
+import WrittenSpaceLogin from '../../components/WrittenSpaceLogin/WrittenSpaceLogin';
+import '../Login/Login.css'
+import Entrar from '../../components/Entrar';
 
 function initialState(){
   return { user: '', password: ''};
