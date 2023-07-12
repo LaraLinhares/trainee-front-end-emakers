@@ -1,15 +1,45 @@
-.button{
-    border-radius: 35px;
-    background: #5E2075;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.entrar-button {
+    padding: 9px 10px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 200ms;
+    transition-property: background-color, color;
+    border: 0;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
     width: 300px;
     height: 50px;
     flex-shrink: 0;
-}
-
-.Link{
-    display: flex;
-    flex-direction:column;
-    margin-bottom: 10px;
-    text-align: left;
-}
+  }
+  
+  .entrar-button--rounded {
+    border-radius: 100px;
+  }
+  
+  .entrar-button--bordered {
+    padding: 7px 10px;
+    border-color: #5E2075;
+    color: #5E2075;
+    border: 2px solid;
+  }
+  
+  .entrar-button--bordered:hover {
+    background-color: #5E2075;
+    color: #fff;
+  }
+  
+  
+  .entrar-button--contained {
+    background-color: #5E2075;
+    color: #fff;
+  }
+  
+  .entrar-button--contained:hover {
+    background-color: #5E2075;
+    border-color: #5E2075;
+    color: #fff;
+  }
