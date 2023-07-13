@@ -45,6 +45,7 @@
     color: #5E2075;
     font-size: 16px;
     justify-content: flex-start;
+    padding-left: 1vw;
   }
   
   .form-control input {
@@ -91,5 +92,93 @@
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+/* Estilos para dispositivos com largura entre 601px e 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .login-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .logolateral {
+    margin-right: 2em;
+  }
+  
+  .user-login {
+    width: 80%;
+  }
+  
+  .form-control input {
+    width: 100%;
+  }
+  
+  .register-container {
+    width: 70%;
+    margin-top: 2em;
+  }
+}
+
+/* Estilos para dispositivos com largura menor ou igual a 600px (Mobile) */
+@media screen and (max-width: 600px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logolateral {
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+  
+  .user-login {
+    width: 90%;
+  }
+  
+  .login_title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .form-control {
+    width: 90%;
+  }
+  
+  .form-control label {
+    font-size: 14px;
+  }
+  
+  .form-control input {
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .register-container {
+    width: 90%;
+    margin-top: 2em;
+  }
+  
+  .title-register {
+    font-size: 30px;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .text-register {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  .submit-button-register {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 

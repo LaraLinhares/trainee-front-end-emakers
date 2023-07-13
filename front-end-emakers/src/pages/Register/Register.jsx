@@ -28,7 +28,11 @@ function Register() {
         {/* Mudar para ter opções dps */}
         <div className="form-control-reg">
           <label htmlFor="gender">Sexo</label>
-          <input id="gender" type="gender" name="gender" autoComplete="off" />
+          <select name="sexo" id="sexo" className='select-control'>
+            <option value="fem">Feminino</option>
+            <option value="masc">Masculino</option>
+            <option value="outro">Outro</option>
+          </select>
         </div>
         <div className="form-control-reg">
           <label htmlFor="img">Imagem</label>
