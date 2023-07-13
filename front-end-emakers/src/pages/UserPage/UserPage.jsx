@@ -2,6 +2,9 @@ import "./UserPage.css"
 import CapaBob from "../../images/bob-capa2.png"
 import FotoPerfil from "../../images/bob-profile.jpg"
 import EmakersImage from "../../images/logo_semfundo.png"
+import Foto1 from "../../images/bob-foto1.jpg"
+import Foto2 from "../../images/bob-foto2.jpg"
+import Foto3 from "../../images/bob-foto3.jpg"
 
 function UserPage() {
   return (
@@ -20,6 +23,12 @@ function UserPage() {
           <p className="bio-profile">
               Trabalho no Siri Cascudo 
           </p>
+          <hr className="barra"/>
+          <div className="post-foto">
+            <img src={Foto1} alt="Foto" className="foto-prof"/>
+            <img src={Foto2} alt="Foto" className="foto-prof"/>
+            <img src={Foto3} alt="Foto" className="foto-prof"/>
+          </div>
       </div>
     </div>
   );
