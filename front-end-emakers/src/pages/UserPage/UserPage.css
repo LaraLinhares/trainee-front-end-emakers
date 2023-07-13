@@ -1,0 +1,25 @@
+.profile {
+    display: grid;
+    grid-template-areas:
+      'cover-photo'
+      'profile-picture'
+      'profile-info';
+    grid-template-rows: 200px 200px auto;
+    gap: 20px;
+  }
+  
+  .cover-photo {
+    grid-area: cover-photo;
+    background-color: #ccc;
+  }
+  
+  .profile-picture {
+    grid-area: profile-picture;
+    background-color: #aaa;
+  }
+  
+  .profile-info {
+    grid-area: profile-info;
+    background-color: #eee; 
+  }
+  

@@ -6,15 +6,10 @@ import './index.css';
 // Configurar Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+// Pages
 import Login from './pages/Login/Login.jsx';
 import Register from './pages/Register/Register.jsx';
 import UserPage from './pages/UserPage/UserPage.jsx';
-
-// Mudança para a pág. UserPage apenas quando logar (não utilizado ainda)
-const Private = ({ Item }) => {
-  const signed = false;
-  return signed > 0 ? <Item /> : <Login />;
-}
 
 const router = createBrowserRouter([
   {

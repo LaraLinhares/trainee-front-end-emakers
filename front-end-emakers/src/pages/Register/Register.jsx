@@ -1,5 +1,7 @@
 import '../Register/Register.css'
 import LogoCompleta from '../../images/Logo_completa_sem_fundo2.png'
+import { Link } from 'react-router-dom';
+import RegisterButton from '../../components/RegisterButton/RegisterButton';
 
 function Register() {
   return (
@@ -28,20 +30,16 @@ function Register() {
           <label htmlFor="gender">Sexo</label>
           <input id="gender" type="gender" name="gender" autoComplete="off" />
         </div>
+        <div className="form-control-reg">
+          <label htmlFor="img">Imagem</label>
+          <input id="img" type="file" name="img" autoComplete="off" />
+        </div>
 
-        {/* Implementar botão que recebe imagem */}
-        {/* Implementar botão de registrar-se */}
-{/*         <EntrarButton
-          type="submit"
-          theme="contained"
-          className="submit-button"
-          rounded
-        >
-          Entrar
-        </EntrarButton> */}
-
-        {/* Criar como link */}
-        <p>Já possui conta?</p>
+        {/* Arrumar dps, inclusive o css*/}
+        <Link to="/userpage">
+        <RegisterButton className='reg-button'/>
+        </Link>
+        <Link to="/" className='linklogin'>Já possui conta?</Link>
       </form>
     </div>
 

@@ -1,0 +1,9 @@
+.button-to-register{
+    border-radius: 10em;
+    background: #FE690E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 20em;
+    height: 4em;
+    flex-shrink: 0;
+    color: aliceblue;
+}
