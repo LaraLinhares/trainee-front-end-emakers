@@ -35,9 +35,10 @@ function Register() {
                 <option value="outro">Outro</option>
               </select>
             </div>
-            <div className="form-control-reg">
-              <label htmlFor="img">Imagem</label>
-              <input id="img" type="file" name="img" />
+            <div className="form-control-img">
+              <p className='title-img'>Imagem</p>
+              <label htmlFor="img"> Selecione</label>
+              <input id="img" type="file" accept='image/*' name="img" className='escondido'/>
             </div>
           </div>
 

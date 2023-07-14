@@ -54,8 +54,24 @@
   gap: 10px;
 }
 
-.form-control-half {
-  flex: 1;
+.title-img{
+  color: #5E2075;
+  font-size: 16px;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+.form-control-img label{
+  border-radius: 35px;
+  border: 1px solid #BBBBBB;
+  padding: 1em 4em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #EFEFEF;
+  font-size: small;
+  color: black;
+}
+
+.escondido{
+  display:none;
 }
 
 .select-control {
@@ -104,24 +120,24 @@
 /* Estilos para dispositivos com largura entre 601px e 1024px */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .reg-login {
-    width: 60%; /* Reduz a largura do reg-login */
+    width: 60%; 
   }
 
   .form-control-reg {
-    width: 80%; /* Define uma largura menor para form-control-reg */
+    width: 80%; 
   }
 
   .logocompleta {
-    height: 15em; /* Reduz a altura do logocompleta */
-    width: 15em; /* Reduz a largura do logocompleta */
-    margin-top: 3em; /* Reduz a margem superior do logocompleta */
+    height: 15em;
+    width: 15em; 
+    margin-top: 3em; 
   }
 
   .text-reg2 {
-    font-size: 32px; /* Reduz o tamanho da fonte do text-reg2 */
-    margin-bottom: 20em; /* Reduz a margem inferior do text-reg2 */
-    margin-left: 2em; /* Reduz a margem esquerda do text-reg2 */
-    margin-right: 2em; /* Reduz a margem direita do text-reg2 */
+    font-size: 32px; 
+    margin-bottom: 20em; 
+    margin-left: 2em; 
+    margin-right: 2em;
   }
 }
 
@@ -142,7 +158,7 @@
 
   .reg2-container {
     width: 100%;
-    margin-bottom: 2em; /* Adiciona margem inferior para separar do conteúdo abaixo */
+    margin-bottom: 2em; 
   }
 
   .logocompleta {
